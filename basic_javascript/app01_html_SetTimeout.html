@@ -1,0 +1,17 @@
+<!DOCTTYPE html>
+<script>
+  function startTimer() {
+    console.log('Waiting for 2 seconds');
+    setTimeout(function() {
+      console.log('Done Waiting');
+      document.getElementById('txt').innerHTML = "Done Waiting";
+      }, 2000);
+    }
+</script>
+
+<body onload="startTimer()">
+  <div id="txt">
+    Waiting for 2 seconds.
+  </div>
+</body>
+
